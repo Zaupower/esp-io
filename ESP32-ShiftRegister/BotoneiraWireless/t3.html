@@ -1,0 +1,227 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jsPDF library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.6/jspdf.plugin.autotable.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+ 
+
+<style>
+    .content { display:none }
+    .button {
+        border: none;
+        text-align: center;
+        display: flex;
+    align-items: center;
+    justify-content: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 10px;
+        margin: 4px 2px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .buttonPlay {
+        background-color: #90c6d1;
+        color: rgb(0, 0, 0);
+        padding: 25px;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        border: 2px solid rgb(2, 2, 255);
+        border-radius: 60%;
+        width: 70px;
+        height: 70px;
+
+    }
+
+    .buttonService {
+        background-color: rgb(182, 215, 168);
+        color: rgb(0, 0, 0);
+        padding: 15px 8px;
+        border: 2px solid #38ff22;
+        border-radius: 12px;
+
+    }
+
+    .buttonGameRules {
+        background-color: rgb(255, 229, 153);
+        color: rgb(0, 0, 0);
+        padding: 15px 8px;
+        border: 2px solid rgb(255, 153, 0);
+        border-radius: 12px;
+
+    }
+
+    .buttonCashout {
+        background-color: rgb(249, 203, 156);
+        color: rgb(0, 0, 0);
+        padding: 15px 8px;
+        border: 2px solid rgb(255, 153, 0);
+        border-radius: 12px;
+        width: 100px;
+    }
+
+    .buttonPlayBet {
+        background-color: #A4C2F4;
+        color: rgb(0, 0, 0);
+        padding: 15px 8px;
+        border: 2px solid #1818FF;
+        border-radius: 12px;
+        
+    }
+    .buttonMode {
+        background-color: #EA9999;
+        color: rgb(0, 0, 0);
+        padding: 15px 8px;
+        border: 2px solid #F83030;
+        border-radius: 12px;
+        
+    }
+    h2 {
+  text-align: center;
+}
+</style>
+
+<button onclick="spinAndWinClick(1)" class="btn btn-primary" type="button">
+</button>
+                            
+<form action="/action_page.php">
+    <label for="cars">Choose a button panel layout - EGM:</label>
+    <select name="cars" id="cars">
+        <option value="waysOccidental">WAYS - Occidental LAYOUT</option>
+        <option value="waysOriental">WAYS - Oriental LAYOUT</option>
+        <option value="linesOccidental">LINES - Occidental LAYOUT</option>
+        <option value="linesOriental">LINES - Oriental LAYOUT</option>
+
+        <option value="shadow">Layout Shadow</option>
+        <option value="phantom">Phantom</option>
+        <option value="galaxyl">Galaxy I</option>
+        <option value="galaxyll">Galaxy II</option>
+    </select>
+</form>
+
+<div id="mainContent">
+
+</div>
+
+<div class="collapse" id="WAYSOccidentalLAYOUT" >
+    <h2 >WAYS - Occidental LAYOUT</h2>
+<table class="fixed">
+    <tr>
+
+        <td>
+
+        </td>
+    </tr>
+    <tr>
+
+        <td rowspan="2">
+            <div style="background-color: #ff00004a; text-align: center;"></div>
+            <button class="button buttonPlay">PLAY</button>
+            </div>
+        </td>
+
+        <td>
+            <div style="background-color: #ff00004a; text-align: center;">
+                <button class="button buttonService">SERVICE</button>
+            </div>
+        </td>
+
+        <td>
+            <div style="background-color: #ff00004a; text-align: center;">
+                <button class="button buttonGameRules">GAME RULES</button>
+            </div>
+        </td>
+
+        <td>
+            <div style="background-color: #ff00004a; text-align: center;">
+                <button class="button buttonPlayBet">PLAY BET 1</button>
+            </div>
+        </td>
+
+        <td>
+            <div style="background-color: #ff00004a; text-align: center;">
+                <button class="button buttonPlayBet">PLAY BET 2</button>
+            </div>
+        </td>
+        <td>
+            <div style="background-color: #ff00004a; text-align: center;">
+                <button class="button buttonPlayBet">PLAY BET 3</button>
+            </div>
+        </td>
+        <td>
+            <div style="background-color: #ff00004a; text-align: center;">
+                <button class="button buttonPlayBet">PLAY BET 6</button>
+            </div>
+        </td>
+        <td>
+            <div style="background-color: #ff00004a; text-align: center;">
+                <button class="button buttonPlayBet">PLAY BET 10</button>
+            </div>
+        </td>
+        <td rowspan="2">
+            <div style="background-color: #ff00004a; text-align: center;"></div>
+            <button class="button buttonPlay">PLAY</button>
+    </div>
+    </td>
+
+    </tr>
+
+    <tr>
+        <td colspan="2">
+            <div style="background-color: #ff00004a; text-align: center;">
+                <button class="button buttonCashout">CASHOUT</button>
+            </div>
+        </td>
+
+        <td>
+            <div style="background-color: #ff00004a; text-align: center;">
+                <button class="button buttonMode">MODE 8</button>
+            </div>
+        </td>
+
+        <td>
+            <div style="background-color: #ff00004a; text-align: center;">
+                <button class="button buttonMode">MODE 18</button>
+            </div>
+        </td>
+        <td>
+            <div style="background-color: #ff00004a; text-align: center;">
+                <button class="button buttonMode">MODE 38</button>
+            </div>
+        </td>
+        <td>
+            <div style="background-color: #ff00004a; text-align: center;">
+                <button class="button buttonMode">MODE 68</button>
+            </div>
+        </td>
+        <td>
+            <div style="background-color: #ff00004a; text-align: center;">
+                <button class="button buttonMode">MODE 88</button>
+            </div>
+        </td>
+    </tr>
+
+</table>
+</div>
+<script>
+    var currentSels = -1;
+function spinAndWinClick(selS) {
+        if (selS == 1) {
+           
+                $('#WAYSOccidentalLAYOUT').show('slow');
+            }
+        }
+//Helper
+function removeAllChildNodes(parent) {
+        while (parent.firstChild) {
+            parent.removeChild(parent.firstChild);
+        }
+    }
+</script>

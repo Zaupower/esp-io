@@ -1,0 +1,72 @@
+
+<style>
+table {
+  margin: 0 auto;
+}
+td {
+  border: 1px solid black;
+}
+.missed {
+  stroke:#ccc; 
+  fill:#fff;
+}
+.point {
+  stroke:#ccc; 
+  fill:#337ab7;
+}
+.revised {
+  stroke:#ccc; 
+  fill:yellow;
+}
+.skipped {
+  stroke-dasharray: 4;
+  stroke:#ccc; 
+  fill:#fff;
+}
+.hidden {
+  display:none;
+}
+
+
+</style>
+
+<table>
+    <tr>
+      <td>
+        <svg height="80" width="80" viewbox="0 -10 80 80">
+          <circle  class="skipped top-left" cx="25" cy="18" r="12" stroke="black" stroke-width="3" fill="red" />
+          <circle  class="skipped top-right hidden" cx="55" cy="18" r="12" stroke="black" stroke-width="3" fill="red" />
+          <circle  class="point bottom-right" cx="55" cy="50" r="12" stroke="black" stroke-width="3" fill="red" />
+          <circle  class="skipped bottom-left" cx="25" cy="50" r="12" stroke="black" stroke-width="3" fill="red" />
+          
+        </svg>
+      </td>
+      <td>
+        <svg height="80" width="80" viewbox="0 -10 80 80">
+          <circle  class="missed" cx="25" cy="18" r="12" stroke="black" stroke-width="3" fill="red" />
+          <circle  class="skipped top-right" cx="55" cy="18" r="12" stroke="black" stroke-width="3" fill="red" />
+          <circle  class="missed" cx="25" cy="50" r="12" stroke="black" stroke-width="3" fill="red" />
+          <circle  class="point" cx="55" cy="50" r="12" stroke="black" stroke-width="3" fill="red" />
+          <circle  class="revised center " cx="39" cy="33" r="12" stroke="black" stroke-width="3" fill="red" />
+        </svg>
+      </td>
+      <td>
+         <svg height="80" width="80" viewbox="0 -10 80 80">
+          <circle  class="skipped top-left" cx="25" cy="18" r="12" stroke="black" stroke-width="3" fill="red" />
+          <circle  class="skipped top-right" cx="55" cy="18" r="12" stroke="black" stroke-width="3" fill="red" />
+          <circle  class="point bottom-right" cx="55" cy="50" r="12" stroke="black" stroke-width="3" fill="red" />
+          <circle  class="missed bottom-left" cx="25" cy="50" r="12" stroke="black" stroke-width="3" fill="red" />
+          <circle  class="revised hidden center " cx="39" cy="33" r="12" stroke="black" stroke-width="3" fill="red" />
+        </svg>
+      </td>
+    </tr>
+    <tr>
+        <td>
+            OLA
+
+        </td>
+        <td>
+            sdfsdfdsfdsfsdffsd
+        </td>
+    </tr>
+  </table>
