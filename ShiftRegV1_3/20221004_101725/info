@@ -1,0 +1,134 @@
+{
+  "uuid": "71ab1abcf9ee6b49085c4920a1302e61",
+  "path": "Offline/ShiftRegV1_3",
+  "name": "ShiftRegV1_3",
+  "content": "",
+  "created_at": "2022-09-06 14:57:36",
+  "updated_at": "2022-10-04 10:17:25",
+  "stick": "",
+  "documents": [
+    {
+      "uuid": "9948e1b7db5f62a91cc90773a388c0f2",
+      "title": "Sheet_2",
+      "description": "",
+      "docType": "1",
+      "master": "1ed71ae288c1e95ffb2e54a031d1bf3b",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "a130b13c2d1d41c0931980afc357050b": 1,
+        "65cbe7a1608343d2bf462a7680fb7efb": 3,
+        "427f119159784536b490f25e1734a2b9": 2,
+        "967d87b4fd33453dbfa3cd451c97cdba": 1,
+        "b0248eb51e084227889f2cb84eab79c4": 16,
+        "dbfa7da092bc44faa13a86aaa683160b": 1
+      },
+      "BOM": [
+        [
+          "Value",
+          "Quantity",
+          "Package",
+          "Components",
+          "CustomPara"
+        ],
+        [
+          "1u",
+          1,
+          "RAD-0.1",
+          "C1",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "ea82fbe34d7840de9fdcf3145ab199ef",
+            "uuid": "dbfa7da092bc44faa13a86aaa683160b"
+          }
+        ],
+        [
+          "DMSH-50S（F）",
+          1,
+          "DB50-TH_DMSH-50S",
+          "DSUB1",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C98869",
+            "BOM_Manufacturer": "Xi'an NSDZ-Tech",
+            "BOM_Manufacturer Part": "-",
+            "BOM_JLCPCB Part Class": "Extended Part",
+            "puuid": "ab427e7a83c34e9f8739ad188cfe8d22",
+            "uuid": "967d87b4fd33453dbfa3cd451c97cdba"
+          }
+        ],
+        [
+          "1k",
+          16,
+          "R0603",
+          "R1,R2,R3,R4,R5,R6,R7,R8,R9,R11,R12,R13,R14,R15,R16,R17",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "398691f1f785460098bbe5ee6590333c",
+            "uuid": "b0248eb51e084227889f2cb84eab79c4"
+          }
+        ],
+        [
+          "NodeMCU-32SLuaAndAzDelivery",
+          1,
+          "NODEMCU-32SLUA",
+          "U1",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C111436",
+            "BOM_Manufacturer": "Ai-Thinker",
+            "BOM_Manufacturer Part": "NodeMCU-32SLua",
+            "puuid": "0733d55cb4e5433f9d1363240db316df",
+            "uuid": "a130b13c2d1d41c0931980afc357050b"
+          }
+        ],
+        [
+          "SN74HC595N",
+          3,
+          "DIP-16_L19.8-W6.5-P2.54-LS7.6-BL",
+          "U2,U3,U4",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer": "TI",
+            "BOM_Manufacturer Part": "SN74HC595N",
+            "BOM_Supplier Part": "C78711",
+            "BOM_JLCPCB Part Class": "Extended Part",
+            "puuid": "1f423f14388b4b17afc87646625a53f6",
+            "uuid": "65cbe7a1608343d2bf462a7680fb7efb"
+          }
+        ],
+        [
+          "SN74HC165N",
+          2,
+          "DIP-16_L19.8-W6.5-P2.54-LS7.6-BL",
+          "U5,U6",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer": "TI",
+            "BOM_Manufacturer Part": "SN74HC165N",
+            "BOM_Supplier Part": "C2909",
+            "BOM_JLCPCB Part Class": "Extended Part",
+            "puuid": "1f423f14388b4b17afc87646625a53f6",
+            "uuid": "427f119159784536b490f25e1734a2b9"
+          }
+        ]
+      ],
+      "updateTime": 1664875045,
+      "createTime": 1662472702,
+      "histories": [],
+      "created_at": "2022-09-06 14:58:22",
+      "updated_at": "2022-10-04 10:17:25"
+    }
+  ],
+  "sort": [
+    "9948e1b7db5f62a91cc90773a388c0f2",
+    "ba3172e9a5033e763a9dd781517aba15"
+  ],
+  "title": "ShiftRegV1_3",
+  "foldername": "ShiftRegV1_3",
+  "schfilename": "ShiftRegV1_3.json",
+  "schfilemtime": 1664875045278
+}
